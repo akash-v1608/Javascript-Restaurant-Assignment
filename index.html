@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+</head>
+
+<body onload="setup()">
+    <div class="main">
+
+        <div id="table-info">
+            <h2>
+                Tables
+            </h2>
+            <input type="search" name="table-name" id="table_name" oninput="searchTable()" placeholder="search table number">
+
+            <div id="tables">
+                <div id="table-box" ondragenter="dragEnd(event)"dropzone="move">
+                    <!-- Tables Display on Left -->
+                </div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <h2>
+                Menu
+            </h2>
+            <input type="search" name="menu" id="menu_search" oninput="searchMenu()" placeholder="search menu items ">
+            <div id="menu-items">
+                <!-- Menu Display on Right -->
+            </div>
+
+        </div>
+
+        <div id="popup" class="popup">
+            <!-- Modal content  -->
+            <div class="popup-content">
+                <div id="popup-close">
+                    <button onclick="closePopup()" id="button-close">close</button>
+                </div>
+
+                <div id="popup-table-name">
+                            <!-- Popup Opening  -->
+                </div>
+
+                <div>
+                    <table id="table-info-items">
+                        <tr>
+                            <td>
+                                S.No
+                            </td>
+                            <td>
+                                Item Name
+                            </td>
+                            <td>
+                                Quantity
+                            </td>
+                            <td>
+                                Delete
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="popup-footer">
+                            <!-- Total  -->
+                </div>
+                
+                <div id="bill">
+                        <!-- Shows Bills and Clears It -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <script src="dataItems.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

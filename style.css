@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    padding: 3rem;
+    padding-left: 1rem;
+  }
+  
+  /* Tables styling */
+  #table-info {
+    padding: 0.5rem;
+    flex: 0.5;
+    height: 100%;
+    position: sticky;
+    top: 10px;
+    text-align: center;
+  }
+  input[type="search"] {
+    font-size: 1rem;
+    border: 2px solid blue;
+    padding: 10px 10px;
+    margin-top: 5px;
+    position: sticky;
+    top: 0px;
+    width:100%;
+  }
+  #tables {
+    padding-top: 1rem;
+    margin-top: 2px;
+  }
+  
+  #table-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid blue;
+  }
+  
+  #table-box p {
+    margin-top: 1rem;
+  }
+  
+  /* Menu styling  */
+  #menu {
+    border-left: 4px solid red;
+    padding: 0.5rem;
+    flex: 0.8;
+  }
+  
+  #menu h2 button {
+    right: 0;
+  }
+  
+  #menu h2{
+    text-align: center;
+  }
+  #menu input[type="search"] {
+    font-size: 1rem;
+    border: 2px solid blue;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+  }
+  
+  #menu-items {
+    padding-top: 1rem;
+    
+  }
+  
+  .menu-item {
+    margin-top: 1rem;
+    width: 94%;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid blue;
+  }
+  button {
+    padding: 2px;
+  }
+  /* Popup styling */
+  /* ref : https://www.w3schools.com/howto/howto_css_modals.asp */
+  .popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    padding-top: 10px;
+    border: 1px solid #888;
+    width: 50%;
+    /* border-top: 50px solid purple; */
+  }
+  #popup-close {
+    background-color: rgb(69, 127, 138);
+    margin-top: -10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: right;
+    padding: 1rem;
+  }
+  #popup-close button {
+    background-color: white;
+    padding: 0.5rem;
+    border: none;
+    color: #dc3545;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  .change {
+    background-color: rgb(114, 124, 70);
+    box-shadow: none;
+  }
+  
+  #popup-footer {
+    margin-top: 2px;
+    text-align: center;
+  }
+  #bill{
+      text-align: right;
+  }
+  #generate button {
+    padding: 0.5rem;
+    border: none;
+    color: #dc3545;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #dc3545;
+  }
+  #popup-table-name {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid white;
+    padding: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
